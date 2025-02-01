@@ -4,6 +4,8 @@ padding: 0%;
 }
 th, .end {
     background-color: #2862ce;
+    padding: 20px;
+    color: white;
 }
 tr:nth-child(odd) {
     background-color: #eef7ff;
@@ -17,6 +19,9 @@ td {
     padding: 20px;
     color: rgb(39, 2, 2);
 }
+.end td {
+    color: white;
+}
 table {
     border-collapse: collapse;
 }
@@ -26,13 +31,27 @@ form {
     padding: 20px;
 }
 .form {
+    font-size: large;
+    font-family: 'Courier New';
     width: 50%;
+    margin-top: 10px;
 }
 .form input,  select {
+    font-size: large;
+    font-family: 'Courier New';
     border: none;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
-    background-image: linear-gradient(to bottom, rgba(8, 36, 129, 0.5), rgba(9, 130, 243, 0.5));
+    background-color: #2862ce;
+    color: white;
+}
+.form input[type="submit"]:active {
+    background-color: #0558f4;
+    color: white;
+    scale: 1.009;
+}
+.form input[type="submit"]:hover {
+    cursor: pointer;
 }
